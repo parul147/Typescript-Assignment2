@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TypeScript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        th,
+        td,
+        p,
+        input {
+            font: 14px Verdana;
+        }
+        
+        table,
+        th,
+        td {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        
+        th {
+            font-weight: bold;
+        }
+        
+        .options {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        #Edit_Panel {
+            display: block;
+        }
+        
+        .body1 {
+            background-image: linear-gradient(to bottom right, rgb(224, 157, 233), rgb(138, 176, 233));
+            height: 700px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #table1 {
+            margin-top: 250px;
+        }
+        
+        #table2 {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="body1">
+        <marquee scrollamount="12">
+            <h1>TypeScript Assignment</h1>
+        </marquee>
+        <div id="datetime"></div>
+        <button id="table1" class="btn btn-success  btn-lg" Onclick="showTable();">LOAD DATA</button>
+        <button id="table2" class="btn btn-info  btn-lg" Onclick="window.location.reload();">REFRESH DATA</button>
+        <div id="displaytable" style="display: none;">
+            <div class="container">
+                <table class="table table-striped table-dark table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>First Name</th>
+                            <th>Middle Name</th>
+                            <th>Last Name</th>
+                            <th>Email Address</th>
+                            <th>Phone Number</th>
+                            <th>Role</th>
+                            <th>Address</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabledata">
+                        <tr></tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="table.js"></script>
+</body>
+
+</html>

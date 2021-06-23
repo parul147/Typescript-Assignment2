@@ -1,0 +1,38 @@
+{
+    "json": 
+[
+
+        {
+            "FirstName":"Alex",
+            "MiddleName": "Graze",
+            "LastName":"Parrish",
+            "Email":"Alex.2331@gmail.com",
+            "Phone Number":"782314564",
+            "Role":"Full Stack Developer",
+            "Address":"Street Pork, Los Angeles"
+        },
+        {
+            "FirstName":"Shelby",
+            "MiddleName": "Green",
+            "LastName":"Wyatt",
+            "Email":"Wyattshelby123@gmail.com",
+            "Phone Number":"734314564",
+            "Role":"Business Associate",
+            "Address":"Downtown, Boston"
+        },
+        {
+            "FirstName":"Natalie ",
+            "MiddleName": "Cry    stal",
+            "LastName":"Vasquez",
+            "Email":"Vasquez1996@gmail.com",
+            "Phone Number":"8734314564",
+            "Role":"Lead Marketer",
+            "Address":"Green Avenue, Chicago"
+        }
+        
+        
+        ]
+
+        
+
+}
