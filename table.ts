@@ -74,8 +74,8 @@ let json = [
   },
 ];
 
-var l = json.length;
-var editedContent: string[] = [];
+let l = json.length;
+let editedContent: string[] = [];
 @FormatDate(new Date())
 class jsonObject extends Model<string, number> implements Row<any, any> {
   id: number;
@@ -89,17 +89,17 @@ class jsonObject extends Model<string, number> implements Row<any, any> {
 
   Edit<T>(id: string): void {
     //console.log(id);
-    var id_name = "Edit_Panel" + id;
-    var id_name: string = id_name.toString();
-    var id_name1 = "Save_Panel" + id;
-    var id_name1: string = id_name1.toString();
+    let id_name = "Edit_Panel" + id;
+    id_name = id_name.toString();
+    let id_name1 = "Save_Panel" + id;
+    id_name1 = id_name1.toString();
 
     //console.log("id of cancel",id);
-    var editPanel: HTMLElement = document.getElementById(
+    let editPanel: HTMLElement = document.getElementById(
       id_name
     ) as HTMLElement;
     //console.log("edit panel",editPanel);
-    var savePanel: HTMLElement = document.getElementById(
+    let savePanel: HTMLElement = document.getElementById(
       id_name1
     ) as HTMLElement;
     //console.log("save panel",savePanel);
@@ -112,13 +112,13 @@ class jsonObject extends Model<string, number> implements Row<any, any> {
     //console.log("idtupe",typeof(id));
     // return ;
     //console.log('id n',id);
-    var currentrow: HTMLElement = document.getElementById(id) as HTMLElement;
+    let currentrow: HTMLElement = document.getElementById(id) as HTMLElement;
     // console.log("currentrow",currentrow);
     currentrow.contentEditable = "true";
   }
 
   DeleteButton<U>(id: number): void {
-    v = newObj;
+    let v = newObj;
 
     let newArray = json.filter((item: any) => {
       return item.id !== id;
@@ -128,7 +128,7 @@ class jsonObject extends Model<string, number> implements Row<any, any> {
 
     // console.log("Debug2:newAray ", newArray)
 
-    var temp = "";
+    let temp = "";
 
     newArray.forEach((u: any) => {
       temp += "<tr  id=" + "row" + u.id + ">";
@@ -160,24 +160,24 @@ class jsonObject extends Model<string, number> implements Row<any, any> {
 
   SaveButton<T>(id: string): void {
     // console.log("argument of save button",id);
-    var rowid = "row" + id;
+    let rowid = "row" + id;
 
-    var selectedrow = document.getElementById(rowid);
-    var selectedrowcontent = selectedrow.innerHTML;
+    let selectedrow = document.getElementById(rowid);
+    let selectedrowcontent = selectedrow.innerHTML;
     //console.log('select row content', selectedrowcontent);
-    var idint = parseInt(id);
+    let idint = parseInt(id);
     editedContent[idint] = selectedrowcontent;
 
-    var is_current = selectedrow.isContentEditable;
+    let is_current = selectedrow.isContentEditable;
     if (is_current) {
       selectedrow.contentEditable = "false";
     }
-    var id_name = "Edit_Panel" + rowid;
-    var id_name1 = "Save_Panel" + rowid;
-    var editPanel: HTMLElement = document.getElementById(
+    let id_name = "Edit_Panel" + rowid;
+    let id_name1 = "Save_Panel" + rowid;
+    let editPanel: HTMLElement = document.getElementById(
       id_name
     ) as HTMLElement;
-    var savePanel: HTMLElement = document.getElementById(
+    let savePanel: HTMLElement = document.getElementById(
       id_name1
     ) as HTMLElement;
     if (editPanel.style.display == "none") {
@@ -188,28 +188,28 @@ class jsonObject extends Model<string, number> implements Row<any, any> {
 
   CancelButton<T>(id: string): void {
     // console.log("id",id);
-    var intid = parseInt(id);
+    let intid = parseInt(id);
     // console.log("in cancel button");
     // console.log("intid",intid);
     // console.log(editedContent[intid]);
-    var temp = "";
-    var rowid = "row" + id;
+    let temp = "";
+    let rowid = "row" + id;
     // console.log(rowid);
-    var selectedrow1 = document.getElementById(rowid);
-    var selectedrow1c = selectedrow1.innerHTML;
+    let selectedrow1 = document.getElementById(rowid);
+    let selectedrow1c = selectedrow1.innerHTML;
     //  console.log("cancel row",selectedrow1)
 
-    var is_editable = selectedrow1.isContentEditable;
+    let is_editable = selectedrow1.isContentEditable;
     if (is_editable) {
       selectedrow1.contentEditable = "false";
     }
-    var i;
+    let i;
     for (i = 1; i <= jsoncopy.length; i++) {
       if (editedContent[i]) {
         temp += "<tr id='row" + i + "'>" + editedContent[i] + "</tr>";
       }
       if (!editedContent[i]) {
-        var u = jsoncopy[i - 1];
+        let u = jsoncopy[i - 1];
         temp += "<tr  id=" + "row" + u.id + ">";
         temp += "<td >" + u.FirstName + "</td>";
         temp += "<td>" + u.MiddleName + "</td>";
@@ -239,12 +239,12 @@ class jsonObject extends Model<string, number> implements Row<any, any> {
       display_table.innerHTML = temp;
     }
 
-    var id_name = "Edit_Panel" + rowid;
-    var id_name1 = "Save_Panel" + rowid;
-    var editPanel: HTMLElement = document.getElementById(
+    let id_name = "Edit_Panel" + rowid;
+    let id_name1 = "Save_Panel" + rowid;
+    let editPanel: HTMLElement = document.getElementById(
       id_name
     ) as HTMLElement;
-    var savePanel: HTMLElement = document.getElementById(
+    let savePanel: HTMLElement = document.getElementById(
       id_name1
     ) as HTMLElement;
     if (editPanel.style.display == "none") {
@@ -284,12 +284,12 @@ function showTable(): void {
 }
 
 if (json.length > 0) {
-  var temp = "";
+  let temp = "";
 
-  var i;
+  let i;
   for (i = 0; i < 5; i++) {
-    var u = newObj[i];
-    var v = newObj;
+    let u = newObj[i];
+    let v = newObj;
     temp += "<tr  id=" + "row" + u.id + ">";
     temp += "<td >" + u.FirstName + "</td>";
     temp += "<td>" + u.MiddleName + "</td>";
@@ -321,7 +321,7 @@ if (json.length > 0) {
   display_table.innerHTML = temp;
 }
 
-var array = json;
+let array = json;
 
 function FormatDate(dt: any): any {
   return function (target: any, name: string, descriptor: PropertyDescriptor) {

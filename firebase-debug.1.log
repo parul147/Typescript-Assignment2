@@ -1,0 +1,56 @@
+[debug] [2021-06-22T14:21:28.143Z] ----------------------------------------------------------------------
+[debug] [2021-06-22T14:21:28.146Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-06-22T14:21:28.147Z] CLI Version:   9.12.1
+[debug] [2021-06-22T14:21:28.147Z] Platform:      win32
+[debug] [2021-06-22T14:21:28.147Z] Node Version:  v14.15.5
+[debug] [2021-06-22T14:21:28.148Z] Time:          Tue Jun 22 2021 19:51:28 GMT+0530 (India Standard Time)
+[debug] [2021-06-22T14:21:28.148Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-22T14:21:28.159Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-22T14:21:28.159Z] > authorizing via signed-in user (manojchopra8872@gmail.com)
+[debug] [2021-06-22T14:21:28.160Z] [iam] checking project ts12-de057 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-06-22T14:21:28.162Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-22T14:21:28.163Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-22T14:21:28.827Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 22 Jun 2021 14:21:27 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-22T14:21:28.947Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ts12-de057:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-06-22T14:21:30.498Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Jun 2021 14:21:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1348","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-22T14:21:30.504Z] > refreshing access token with scopes: []
+[debug] [2021-06-22T14:21:30.504Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-22T14:21:30.802Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 22 Jun 2021 14:21:29 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-22T14:21:30.908Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ts12-de057 [none]
+[debug] [2021-06-22T14:21:31.445Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ts12-de057 200
+[debug] [2021-06-22T14:21:31.446Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ts12-de057 {"projectId":"ts12-de057","projectNumber":"950561817692","displayName":"ts12","name":"projects/ts12-de057","resources":{"hostingSite":"ts12-de057"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'ts12-de057'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-06-22T14:21:31.467Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-22T14:21:31.468Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-22T14:21:31.761Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Tue, 22 Jun 2021 14:21:30 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-22T14:21:31.870Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ts12-de057/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-06-22T14:21:34.000Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Jun 2021 14:21:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[ts12-de057]: beginning deploy... 
+[debug] [2021-06-22T14:21:35.652Z] Error: EPERM: operation not permitted, scandir 'C:/Users/DELL/Desktop/typescript/firebase-debug.log'
+    at Object.readdirSync (fs.js:1021:3)
+    at GlobSync._readdir (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:286:41)
+    at GlobSync._readdirInGlobStar (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:243:17)
+    at GlobSync._readdir (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:274:17)
+    at GlobSync._processReaddir (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:135:22)
+    at GlobSync._process (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:378:10)
+    at GlobSync._process (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:128:10)
+    at new GlobSync (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:46:10)
+    at Function.globSync [as sync] (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:24:10)
+    at Object.listFiles (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:19)
+    at runDeploys (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:42:35)
+    at deploy (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:73:12)
+    at _chain (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:23:40)
+    at C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:67:16
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.

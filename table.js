@@ -92,9 +92,9 @@ var jsonObject = /** @class */ (function (_super) {
     jsonObject.prototype.Edit = function (id) {
         //console.log(id);
         var id_name = "Edit_Panel" + id;
-        var id_name = id_name.toString();
+        id_name = id_name.toString();
         var id_name1 = "Save_Panel" + id;
-        var id_name1 = id_name1.toString();
+        id_name1 = id_name1.toString();
         //console.log("id of cancel",id);
         var editPanel = document.getElementById(id_name);
         //console.log("edit panel",editPanel);
@@ -113,7 +113,7 @@ var jsonObject = /** @class */ (function (_super) {
         currentrow.contentEditable = "true";
     };
     jsonObject.prototype.DeleteButton = function (id) {
-        v = newObj;
+        var v = newObj;
         var newArray = json.filter(function (item) {
             return item.id !== id;
         });
@@ -250,7 +250,7 @@ function showTable() {
 }
 if (json.length > 0) {
     var temp = "";
-    var i;
+    var i = void 0;
     for (i = 0; i < 5; i++) {
         var u = newObj[i];
         var v = newObj;
